@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 // Here are some more easy Clippy fixes so you can see its utility 📎
 // TODO: Fix all the Clippy lints.
 
 #[rustfmt::skip]
+=======
+// Here are some more easy Clippy fixes so you can see its utility.
+// TODO: Fix all the Clippy lints.
+
+>>>>>>> origin/main
 #[allow(unused_variables, unused_assignments)]
 fn main() {
     let my_option: Option<&str> = None;
@@ -11,14 +17,24 @@ fn main() {
         println!("{}", my_option.unwrap());
     }
 
+<<<<<<< HEAD
+=======
+    #[rustfmt::skip]
+>>>>>>> origin/main
     let my_arr = &[
         -1, -2, -3
         -4, -5, -6
     ];
     println!("My array! Here it is: {my_arr:?}");
 
+<<<<<<< HEAD
     let my_empty_vec = vec![1, 2, 3, 4, 5].resize(0, 5);
     println!("This Vec is empty, see? {my_empty_vec:?}");
+=======
+    let mut my_vec = vec![1, 2, 3, 4, 5];
+    my_vec.resize(0, 5);
+    println!("This Vec is empty, see? {my_vec:?}");
+>>>>>>> origin/main
 
     let mut value_a = 45;
     let mut value_b = 66;

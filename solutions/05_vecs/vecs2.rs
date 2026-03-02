@@ -8,6 +8,7 @@ fn vec_loop(input: &[i32]) -> Vec<i32> {
     output
 }
 
+<<<<<<< HEAD
 fn vec_map_example(input: &[i32]) -> Vec<i32> {
     // An example of collecting a vector after mapping.
     // We map each element of the `input` slice to its value plus 1.
@@ -24,6 +25,8 @@ fn vec_map(input: &[i32]) -> Vec<i32> {
     input.iter().map(|element| 2 * element).collect()
 }
 
+=======
+>>>>>>> origin/main
 fn main() {
     // You can optionally experiment here.
 }
@@ -38,6 +41,7 @@ mod tests {
         let ans = vec_loop(&input);
         assert_eq!(ans, [4, 8, 12, 16, 20]);
     }
+<<<<<<< HEAD
 
     #[test]
     fn test_vec_map_example() {
@@ -52,4 +56,6 @@ mod tests {
         let ans = vec_map(&input);
         assert_eq!(ans, [4, 8, 12, 16, 20]);
     }
+=======
+>>>>>>> origin/main
 }

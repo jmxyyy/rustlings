@@ -3,7 +3,10 @@ fn main() {
 
     // TODO: Destructure the `cat` tuple in one statement so that the println works.
     // let /* your pattern here */ = cat;
+<<<<<<< HEAD
     let (name, age) = cat;
+=======
+>>>>>>> origin/main
 
     println!("{name} is {age} years old");
 }

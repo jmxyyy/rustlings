@@ -5,7 +5,11 @@ mod sausage_factory {
         String::from("Ginger")
     }
 
+<<<<<<< HEAD
     pub fn make_sausage() {
+=======
+    fn make_sausage() {
+>>>>>>> origin/main
         get_secret_recipe();
         println!("sausage!");
     }

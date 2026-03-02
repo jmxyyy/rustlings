@@ -1,16 +1,25 @@
 fn trim_me(input: &str) -> &str {
     // TODO: Remove whitespace from both ends of a string.
+<<<<<<< HEAD
     input.trim()
+=======
+>>>>>>> origin/main
 }
 
 fn compose_me(input: &str) -> String {
     // TODO: Add " world!" to the string! There are multiple ways to do this.
+<<<<<<< HEAD
     format!("{input} world!")
+=======
+>>>>>>> origin/main
 }
 
 fn replace_me(input: &str) -> String {
     // TODO: Replace "cars" in the string with "balloons".
+<<<<<<< HEAD
     input.replace("cars", "balloons")
+=======
+>>>>>>> origin/main
 }
 
 fn main() {

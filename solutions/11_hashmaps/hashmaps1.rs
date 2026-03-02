@@ -1,7 +1,11 @@
 // A basket of fruits in the form of a hash map needs to be defined. The key
 // represents the name of the fruit and the value represents how many of that
 // particular fruit is in the basket. You have to put at least 3 different
+<<<<<<< HEAD
 // types of fruits (e.g apple, banana, mango) in the basket and the total count
+=======
+// types of fruits (e.g. apple, banana, mango) in the basket and the total count
+>>>>>>> origin/main
 // of all the fruits should be at least 5.
 
 use std::collections::HashMap;

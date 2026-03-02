@@ -2,10 +2,15 @@
 fn picky_eater(food: &str) -> &str {
     if food == "strawberry" {
         "Yummy!"
+<<<<<<< HEAD
     } else if food == "potato" {
         "I guess I can eat that."
     } else {
         "No thanks!"
+=======
+    } else {
+        1
+>>>>>>> origin/main
     }
 }
 
