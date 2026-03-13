@@ -1,4 +1,4 @@
-use std::{sync::mpsc, thread, time::Duration};
+use std::{clone, sync::mpsc, thread, time::Duration};
 
 struct Queue {
     first_half: Vec<u32>,
@@ -17,16 +17,19 @@ impl Queue {
 fn send_tx(q: Queue, tx: mpsc::Sender<u32>) {
     // TODO: We want to send `tx` to both threads. But currently, it is moved
     // into the first thread. How could you solve this problem?
+    let f = q.first_half;
+    let s = q.second_half;
+    let t = tx.clone();
     thread::spawn(move || {
-        for val in q.first_half {
+        for val in f {
             println!("Sending {val:?}");
-            tx.send(val).unwrap();
+            t.send(val).unwrap();
             thread::sleep(Duration::from_millis(250));
         }
     });
 
     thread::spawn(move || {
-        for val in q.second_half {
+        for val in s {
             println!("Sending {val:?}");
             tx.send(val).unwrap();
             thread::sleep(Duration::from_millis(250));
